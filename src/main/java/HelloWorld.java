@@ -6,7 +6,7 @@ public class HelloWorld {
 
 	public HelloWorld() {
         // 1. Create the frame (the window that will pop up)
-        JFrame frame = new JFrame("Hi G Period");
+        JFrame frame = new JFrame("Hello World");
         frame.setLayout(new FlowLayout());
 
         // 2. Choose what happens when you click the exit button
@@ -15,13 +15,6 @@ public class HelloWorld {
         // 3. Create components and put them in the frame
         JLabel label1 = new JLabel("Hello World!");
         frame.add(label1);
-
-        JLabel label2 = new JLabel("Hi there");
-        frame.add(label2);
-
-
-
-
 
         // 4. Size the frame
         frame.setSize(300, 300);
