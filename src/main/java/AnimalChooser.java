@@ -1,4 +1,5 @@
 import javax.swing.*;
+import javax.swing.border.Border;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -26,6 +27,36 @@ public class AnimalChooser {
         button1.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent ae) {
                 ImageIcon icon = new ImageIcon("images/red_panda.jpg");
+                label1.setIcon(icon);
+            }
+        });
+
+        JButton button2 = new JButton("Seal");
+        frame.add(button2, BorderLayout.WEST);
+
+        button2.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent ae) {
+                ImageIcon icon = new ImageIcon("images/seal.jpg");
+                label1.setIcon(icon);
+            }
+        });
+
+        JButton button3 = new JButton("Dog");
+        frame.add(button3, BorderLayout.EAST);
+
+        button3.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent ae) {
+                ImageIcon icon = new ImageIcon("images/este.jpg");
+                label1.setIcon(icon);
+            }
+        });
+
+        JButton button4 = new JButton("Hedgehog");
+        frame.add(button4, BorderLayout.NORTH);
+
+        button4.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent ae) {
+                ImageIcon icon = new ImageIcon("images/hedgehog.jpeg");
                 label1.setIcon(icon);
             }
         });
